@@ -1,0 +1,99 @@
+// run "protoc -I=$SRC_DIR --cpp_out=$DST_DIR $SRC_DIR/LessonFile.proto"
+// i.e. "protoc -I=./ --cpp_out=./ ./LessonFile.proto"
+
+package Guitar_learning;
+
+message LessonFile {
+  optional string creator = 1;
+
+  message Tone {
+    required double pitch = 1;
+    optional uint32 str = 2 [default = 0];
+  }
+
+  enum NoteLength {
+    nl64 = 1;
+    nl32 = 2;
+    nl16 = 4;
+    nl8 = 8;
+    nl4 = 16;
+    nl2 = 32;
+    nl1 = 64;
+  }
+  message Note {
+    required NoteLength length = 1;
+    required uint32 extension = 2;
+    optional bool continueTo = 3;     // Linked like this: on every continueTo, next continuedFrom makes pointer connection
+    optional bool continuedFrom = 4;
+    optional bool slideTo = 5;        // Same as above
+    optional bool slidedFrom = 6;
+    optional bool vibrato = 7;
+    optional bool HO = 8;
+    optional bool PO = 9;
+    optional uint32 grouping = 10;
+    optional uint32 ungrouping = 11;
+    optional bool in_group = 12; // can be calculated by (un-)grouping value
+    repeated Tone tone = 13; // REPEATED! - can vary from 1 to 6
+  }
+
+  message Bar {
+    optional uint32 id = 1; // can be generated in runtime
+    optional uint32 length = 2; // can be generated in runtime by track
+    optional bool repeat_start = 3;
+    optional uint32 repeat_end = 4 [default = 1]; // 0 === 1 => no repeat
+    optional uint32 next_repeat_ending = 5 [default = 0]; // id
+    optional string  bar_chord = 6;
+    repeated Note notes = 7;
+    // optional Bar next, *previous; // Linked only in runtime!
+    // clef - also during runtime
+  }
+
+  enum ClefType {
+    treble = 1;
+    bass = 2;
+  }
+  message Track {
+    required ClefType clef = 1;
+    required uint32 beat_count = 2;
+    required uint32 beat_length = 3;
+    repeated Bar bars = 4;
+  }
+
+    message bgMysic {
+        enum bgType {
+            NONE = 0;
+            WMA = 1;
+            MP3 = 2;
+            VORIBS = 3; // ogg is container
+        }
+    required bgType type = 1;
+    optional bytes header = 2;
+    optional bytes data = 3;
+    }
+    message Visuals {
+        enum visualType {
+            NONE = 0;
+            WMV = 1;
+            MPEG2 = 2;
+            MPEG4 = 3;
+            DIVX = 4;
+            XVID = 5;
+            X264 = 6;
+            //NB avi, mkv, asf, etc. - are containers
+        }
+    required visualType type = 1;
+    optional bytes header = 2;
+    optional bytes data = 3;
+    }
+
+  message Lesson {
+    required Track track = 1;
+    optional uint32 bpm = 2;
+    optional bgMysic bg_music = 3;
+    optional Visuals visuals = 4;
+  }
+  required Lesson lesson = 2;
+
+  optional string signature = 3; // for signing private lessons
+
+}

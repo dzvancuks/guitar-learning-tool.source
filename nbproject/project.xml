@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.cnd.makeproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/make-project/1">
+            <name>Guitar_learning</name>
+            <c-extensions>c</c-extensions>
+            <cpp-extensions>cc,cpp</cpp-extensions>
+            <header-extensions>h</header-extensions>
+            <sourceEncoding>UTF-8</sourceEncoding>
+            <make-dep-projects/>
+            <sourceRootList>
+                <sourceRootElem>E:\My Documents\NetBeansProjects\Guitar_learning\kiss_fft</sourceRootElem>
+            </sourceRootList>
+            <confList>
+                <confElem>
+                    <name>Debug</name>
+                    <type>4</type>
+                </confElem>
+                <confElem>
+                    <name>Release</name>
+                    <type>4</type>
+                </confElem>
+            </confList>
+        </data>
+    </configuration>
+</project>

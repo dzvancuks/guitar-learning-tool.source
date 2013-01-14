@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RCC version="1.0">
+    <qresource>
+<!--
+        List files that you want to include into resources like this:
+        <file>images/copy.png</file>
+-->
+        <file>sounds/metronome_button-click.wav</file> <!--http://freesound.org/people/KorgMS2000B/sounds/54405/-->
+        <file>sounds/metronome_metallic.wav</file>     <!--http://freesound.org/people/m1rk0/sounds/50070/-->
+        <file>sounds/metronome-click.wav</file>        <!--http://freesound.org/people/KorgMS2000B/sounds/54406/-->
+    </qresource>
+</RCC>

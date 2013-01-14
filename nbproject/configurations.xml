@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="80">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="f2" displayName="Analyzers" projectFiles="true">
+      <itemPath>E:/My Documents/NetBeansProjects/Guitar_learning/ChordAnalyzer.cpp</itemPath>
+      <itemPath>E:/My Documents/NetBeansProjects/Guitar_learning/ChordAnalyzer.h</itemPath>
+      <itemPath>SingleToneAnalyzer.cpp</itemPath>
+      <itemPath>SingleToneAnalyzer.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="f4" displayName="EffectSystem" projectFiles="true">
+      <itemPath>E:/My Documents/NetBeansProjects/Guitar_learning/Effect.cpp</itemPath>
+      <itemPath>E:/My Documents/NetBeansProjects/Guitar_learning/Effect.h</itemPath>
+      <itemPath>E:/My Documents/NetBeansProjects/Guitar_learning/EffectDistortion.cpp</itemPath>
+      <itemPath>E:/My Documents/NetBeansProjects/Guitar_learning/EffectDistortion.h</itemPath>
+      <itemPath>E:/My Documents/NetBeansProjects/Guitar_learning/EffectEcho.cpp</itemPath>
+      <itemPath>E:/My Documents/NetBeansProjects/Guitar_learning/EffectEcho.h</itemPath>
+      <itemPath>E:/My Documents/NetBeansProjects/Guitar_learning/EffectPump.cpp</itemPath>
+      <itemPath>E:/My Documents/NetBeansProjects/Guitar_learning/EffectPump.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="kiss_fft" displayName="kiss_fft" projectFiles="true">
+      <itemPath>kiss_fft/_kiss_fft_guts.h</itemPath>
+      <itemPath>kiss_fft/kfc.c</itemPath>
+      <itemPath>kiss_fft/kfc.h</itemPath>
+      <itemPath>kiss_fft/kiss_fft.c</itemPath>
+      <itemPath>kiss_fft/kiss_fft.h</itemPath>
+      <itemPath>kiss_fft/kiss_fftnd.c</itemPath>
+      <itemPath>kiss_fft/kiss_fftnd.h</itemPath>
+      <itemPath>kiss_fft/kiss_fftndr.c</itemPath>
+      <itemPath>kiss_fft/kiss_fftndr.h</itemPath>
+      <itemPath>kiss_fft/kiss_fftr.c</itemPath>
+      <itemPath>kiss_fft/kiss_fftr.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="f1" displayName="NoteSystem" projectFiles="true">
+      <itemPath>Bar.cpp</itemPath>
+      <itemPath>Bar.h</itemPath>
+      <itemPath>Chord.cpp</itemPath>
+      <itemPath>Chord.h</itemPath>
+      <itemPath>Lesson.cpp</itemPath>
+      <itemPath>Lesson.h</itemPath>
+      <itemPath>Note.cpp</itemPath>
+      <itemPath>Note.h</itemPath>
+      <itemPath>SingleNote.cpp</itemPath>
+      <itemPath>SingleNote.h</itemPath>
+      <itemPath>Track.cpp</itemPath>
+      <itemPath>Track.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="f3" displayName="SaveLoad system" projectFiles="true">
+      <itemPath>E:/My Documents/NetBeansProjects/Guitar_learning/LessonFile.pb.cc</itemPath>
+      <itemPath>E:/My Documents/NetBeansProjects/Guitar_learning/LessonFile.pb.h</itemPath>
+      <itemPath>LoadStore.cpp</itemPath>
+      <itemPath>LoadStore.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Исходные файлы "
+                   projectFiles="true">
+      <itemPath>AudioIO.cpp</itemPath>
+      <itemPath>Carriage.cpp</itemPath>
+      <itemPath>E:/My Documents/NetBeansProjects/Guitar_learning/Metronome.cpp</itemPath>
+      <itemPath>E:/My Documents/NetBeansProjects/Guitar_learning/Mixer.cpp</itemPath>
+      <itemPath>Scholar.cpp</itemPath>
+      <itemPath>Tuner.cpp</itemPath>
+      <itemPath>Tutor.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="HeaderFiles"
+                   displayName="Файлы заголовков"
+                   projectFiles="true">
+      <itemPath>AudioIO.h</itemPath>
+      <itemPath>Carriage.h</itemPath>
+      <itemPath>E:/My Documents/NetBeansProjects/Guitar_learning/Metronome.h</itemPath>
+      <itemPath>E:/My Documents/NetBeansProjects/Guitar_learning/Mixer.h</itemPath>
+      <itemPath>Scholar.h</itemPath>
+      <itemPath>Tuner.h</itemPath>
+      <itemPath>Tutor.h</itemPath>
+      <itemPath>E:/My Documents/NetBeansProjects/Guitar_learning/common.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Файлы ресурсов"
+                   projectFiles="true">
+      <itemPath>Images.qrc</itemPath>
+      <itemPath>Scholar.ui</itemPath>
+      <itemPath>E:/My Documents/NetBeansProjects/Guitar_learning/Sounds.qrc</itemPath>
+      <itemPath>Tuner.ui</itemPath>
+      <itemPath>Tutor.ui</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Файлы тестов"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Важные файлы"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>E:\My Documents\NetBeansProjects\Guitar_learning\kiss_fft</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="4">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>MinGW_1|MinGW</compilerSet>
+      </toolsSet>
+      <qt>
+        <modules>core gui</modules>
+        <defs>
+          <Elem>QMAKE_LFLAGS += -enable-auto-import</Elem>
+          <Elem>QT += multimedia</Elem>
+        </defs>
+      </qt>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibLibItem>portaudio.dll</linkerLibLibItem>
+            <linkerLibLibItem>protobuf</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+    </conf>
+    <conf name="Release" type="4">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>MinGW_1|MinGW</compilerSet>
+      </toolsSet>
+      <qt>
+        <version>0.2</version>
+        <buildMode>1</buildMode>
+        <modules>core gui</modules>
+        <defs>
+          <Elem>QT += multimedia</Elem>
+        </defs>
+      </qt>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibLibItem>portaudio.dll</linkerLibLibItem>
+            <linkerLibLibItem>protobuf</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>
